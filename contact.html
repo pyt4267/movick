@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Movick</title>
+    <meta name="description" content="Movickへのお問い合わせページ。ご質問・ご意見をお待ちしています。">
+    <link rel="canonical" href="https://movick.site/contact.html">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e50914'%3E%3Cpath d='M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin: 30px 0 15px;
+            color: #e50914;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #b0b0b0;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-item a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background: #e50914;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: #b30710;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #666;
+        }
+
+        footer a {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .faq-item h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">🎬 Movick</a>
+            <h1>お問い合わせ</h1>
+        </header>
+
+        <main>
+            <p>Movickに関するご質問、ご意見、バグ報告などは、以下の方法でご連絡ください。</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <strong>メール</strong><br>
+                        <a href="mailto:support@movick.site">support@movick.site</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🐦</span>
+                    <div>
+                        <strong>X (Twitter)</strong><br>
+                        <a href="https://x.com/movick_site" target="_blank" rel="noopener">@movick_site</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>よくあるご質問</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <h3>Q: Movickは無料ですか？</h3>
+                    <p>A: はい、Movickは完全無料でご利用いただけます。登録も不要です。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 映画情報はどこから取得していますか？</h3>
+                    <p>A: TMDB（The Movie Database）のAPIを使用して、最新の映画・ドラマ情報を取得しています。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: お気に入りはどこに保存されますか？</h3>
+                    <p>A: お気に入りはブラウザのローカルストレージに保存されます。サーバーには送信されませんので、ブラウザのデータを削除すると消えてしまいます。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: 情報に誤りがあります</h3>
+                    <p>A: 映画情報はTMDBから取得しているため、誤りがある場合はTMDBのウェブサイトで修正を依頼してください。</p>
+                </div>
+            </div>
+
+            <a href="/" class="back-link">← トップページに戻る</a>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Movick. All rights reserved.</p>
+            <p><a href="privacy.html">プライバシーポリシー</a> | <a href="terms.html">利用規約</a> | <a href="contact.html">お問い合わせ</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
